@@ -23,6 +23,24 @@ telegramAPI.setWebhook(
     console.log(err);
     console.log(data);
 });
+telegramAPI.on('message', function(message){
+    var chat_id = message.chat.id;
+
+    // It'd be good to check received message type here
+    // And react accordingly
+    // We consider that only text messages can be received here
+
+    telegramAPI.sendMessage({
+        chat_id: message.chat.id,
+        text: message.text ? message.text : 'This message doesn\'t contain text :('
+    }, function(err, message)
+    {
+        console.log(err);
+        console.log(message);
+    });
+});    
+
+
 
 //webserver
 let app = koa();
