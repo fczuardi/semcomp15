@@ -30,6 +30,8 @@
   "devDependencies": {
     "babel": "^5.8.21",
     "koa": "^0.21.0",
+    "koa-body": "^1.2.1",
+    "koa-router": "^5.1.2",
     "telegram-bot-api": "^0.3.2"
   }
 }

@@ -27,7 +27,7 @@ router.post(telegramConfig.token, koaBody, function* webHook(next) {
     console.log('post received', koaBody);
     yield next;
 });
-app.use(router);
+app.use(router.routes());
 
 app.use(function* defaultResponse(){
   this.body = 'Hello World';
