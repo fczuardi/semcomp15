@@ -1,10 +1,10 @@
 {
   "name": "semcomp15",
   "version": "0.1.0",
-  "description": "Motorista Particular: desafiando o monopolio - my game submission for the USP - ICMC Computer week Game Jam (Aug 14-15, 2015)",
+  "description": "Motorista Particular",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "babel-node ."
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/fczuardi/semcomp15/issues"
   },
-  "homepage": "https://github.com/fczuardi/semcomp15#readme"
+  "homepage": "https://github.com/fczuardi/semcomp15#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "telegram-bot-api": "^0.3.2"
+  }
 }
