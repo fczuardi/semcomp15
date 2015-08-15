@@ -12,7 +12,7 @@ const indexHTML = `
 </ol>`;
 
 //routes
-router.get('/new', function *(next){
+router.get(serverConfig.api.newGame, function *(next){
     console.log('New game route');
     this.body = game.createGame();
     yield next;
