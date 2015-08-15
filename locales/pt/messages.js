@@ -23,7 +23,7 @@ export default {
         alreadyPlaying: 'Voce ja esta dirigindo sob outro codigo. Desative-o primeiro 🔌 usando /quit'
     },
     unknowCommand: () => unknowCommand[Math.round(Math.random()*unknowCommand.length)],
-    quit: '👋 Ate mais fera! Bom descanso.'
+    quit: (name) => `👋 Ate mais ${name}! Bom descanso.`
 };
 
 /*

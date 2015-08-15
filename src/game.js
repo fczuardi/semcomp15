@@ -53,7 +53,7 @@ let quitGame = (player) => {
     delete games[players[player.id].gameId];
     //remove the player
     delete players[player.id];
-    return messages.quit;
+    return messages.quit(player.first_name);
 };
 
 export default {
