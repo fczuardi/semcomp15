@@ -1,0 +1,30 @@
+{
+  "name": "semcomp15",
+  "version": "0.1.0",
+  "description": "Motorista Particular: desafiando o monopolio - my game submission for the USP - ICMC Computer week Game Jam (Aug 14-15, 2015)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fczuardi/semcomp15.git"
+  },
+  "keywords": [
+    "gamejam",
+    "icmc",
+    "semcomp",
+    "semcomp2015",
+    "semcomp15",
+    "uber",
+    "taxi",
+    "game",
+    "telegram"
+  ],
+  "author": "Fabricio C Zuardi",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fczuardi/semcomp15/issues"
+  },
+  "homepage": "https://github.com/fczuardi/semcomp15#readme"
+}
