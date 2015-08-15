@@ -1,12 +1,11 @@
-var telegram = require('telegram-bot-api');
-var telegramConfig = require('./conf/telegram');
+import telegram from 'telegram-bot-api';
+import telegramConfig from './conf/telegram';
 
-var api = new telegram({
-        token: telegramConfig.token
+let api = new telegram({
+    token: telegramConfig.token
 });
 
-api.getMe(function(err, data)
-{
+api.getMe( (err, data) => {
     console.log(err);
     console.log(data);
 });
