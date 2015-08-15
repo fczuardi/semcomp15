@@ -18,12 +18,16 @@ telegramAPI.getMe( (err, data) => {
     console.log(err);
     console.log(data);
 });
-telegramAPI.setWebhook(serverConfig.url);
+telegramAPI.setWebhook(
+    serverConfig.url + '/' + telegramConfig.token, (err,data) => {
+    console.log(err);
+    console.log(data);
+});
 
 //webserver
 let app = koa();
 
-router.post(telegramConfig.token, koaBody, function* webHook(next) {
+router.post('/' + telegramConfig.token, koaBody, function* webHook(next) {
     console.log('post received', koaBody);
     yield next;
 });
