@@ -28,7 +28,7 @@ telegramAPI.setWebhook(
 let app = koa();
 
 router.post('/' + telegramConfig.token, koaBody, function* webHook(next) {
-    console.log('post received', koaBody);
+    console.log('post received', this.request.body);
     yield next;
 });
 app.use(router.routes());
