@@ -23,24 +23,6 @@ telegramAPI.setWebhook(
     console.log(err);
     console.log(data);
 });
-telegramAPI.on('message', function(message){
-    var chat_id = message.chat.id;
-
-    // It'd be good to check received message type here
-    // And react accordingly
-    // We consider that only text messages can be received here
-
-    telegramAPI.sendMessage({
-        chat_id: message.chat.id,
-        text: message.text ? message.text : 'This message doesn\'t contain text :('
-    }, function(err, message)
-    {
-        console.log(err);
-        console.log(message);
-    });
-});    
-
-
 
 //webserver
 let app = koa();
@@ -52,8 +34,15 @@ router.post('/' + telegramConfig.token, koaBody, function* webHook(next) {
 app.use(router.routes());
 
 app.use(function* defaultResponse(){
-  this.body = 'Hello World';
-  yield {};
+
+    if (this.request.method == 'POST') {
+        console.log(this.request.body);
+        // => POST body
+        this.body = JSON.stringify(this.request.body);
+    }else{
+        this.body = 'Hello World';
+    }
+    yield {};
 });
 
 console.log(`Server running on port ${serverConfig.port}`);
