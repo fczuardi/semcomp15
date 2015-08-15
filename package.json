@@ -32,6 +32,7 @@
     "koa": "^0.21.0",
     "koa-body": "^1.2.1",
     "koa-router": "^5.1.2",
+    "node-telegram-bot-api": "^0.12.1",
     "telegram-bot-api": "^0.3.2"
   }
 }
