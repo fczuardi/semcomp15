@@ -13,7 +13,7 @@ const indexHTML = `
 
 //routes
 router.get('/new', function *(next){
-    console.log('New game route', game);
+    console.log('New game route');
     this.body = game.createGame();
     yield next;
 });
@@ -30,9 +30,8 @@ app.use(function *(){
 });
 
 let start = (gameLib) => {
-    console.log('game', gameLib);
     game = gameLib;
-    console.log('Serving on port', serverConfig.port, gameLib);
+    console.log('Serving on port', serverConfig.port);
     app.listen(serverConfig.port);
 };
 

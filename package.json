@@ -31,6 +31,7 @@
     "babel": "^5.8.21",
     "koa": "^0.21.0",
     "koa-router": "^5.1.2",
+    "lodash": "^3.10.1",
     "node-telegram-bot-api": "^0.12.1"
   }
 }
