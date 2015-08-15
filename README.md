@@ -21,6 +21,8 @@ da mecanica do jogo ser via [bot de chat][telegrambot] no celular.
 
 O backend será [node][nodejs] e o front-end provavelmente [Phaser][phaser].
 
+- [koa][koa] (webserver)
+
 ## Interface/gameplay
 
 A principio um jogo simples, 2D visto de cima, seguindo
@@ -37,6 +39,7 @@ da cidade.
 Tenho vontade de fazer uma interface bem retrô e ter na tela de abertura o tradicional "insert coin" para inserir créditos no jogo. Se der tempo quero que estas moedas sejam [Dogecoin][dogecoin]
 
 [dogecoin]:http://dogecoin.com/
+[koa]: http://koajs.com/
 [nodejs]:https://nodejs.org/
 [pacman]:https://en.wikipedia.org/wiki/Pac-Man
 [phaser]:http://phaser.io/

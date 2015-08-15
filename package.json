@@ -29,6 +29,7 @@
   "homepage": "https://github.com/fczuardi/semcomp15#readme",
   "devDependencies": {
     "babel": "^5.8.21",
+    "koa": "^0.21.0",
     "telegram-bot-api": "^0.3.2"
   }
 }
