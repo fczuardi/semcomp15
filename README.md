@@ -34,6 +34,16 @@ A ideia é fazer parte do jogo se passar numa segunda tela (um smartphone com [T
 buscar passageiros e alertas de potenciais perigos
 da cidade.
 
+### Requisitos
+
+- navegador com suporte a websocket
+  - Firefox 7-9 (Old) (Protocol Version 8)
+  - Firefox 10+ (Protocol Version 13)
+  - Chrome 14,15 (Old) (Protocol Version 8)
+  - Chrome 16+ (Protocol Version 13)
+  - Internet Explorer 10+ (Protocol Version 13)
+  - Safari 6+ (Protocol Version 13)
+
 ## Se der tempo
 
 Tenho vontade de fazer uma interface bem retrô e ter na tela de abertura o tradicional "insert coin" para inserir créditos no jogo. Se der tempo quero que estas moedas sejam [Dogecoin][dogecoin]

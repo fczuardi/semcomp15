@@ -4,7 +4,10 @@
   "description": "Motorista Particular",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node ."
+    "test": "babel-node .",
+    "clean": "rm -rf ./dist",
+    "postclean": "mkdir -p ./dist/www/js/",
+    "bundle": "browserify ./src/client/sockets.js -o ./dist/www/js/vendor.js"
   },
   "repository": {
     "type": "git",
@@ -29,9 +32,12 @@
   "homepage": "https://github.com/fczuardi/semcomp15#readme",
   "devDependencies": {
     "babel": "^5.8.21",
+    "browserify": "^11.0.1",
     "koa": "^0.21.0",
     "koa-router": "^5.1.2",
     "lodash": "^3.10.1",
-    "node-telegram-bot-api": "^0.12.1"
+    "node-telegram-bot-api": "^0.12.1",
+    "websocket": "^1.0.21",
+    "ws": "^0.7.2"
   }
 }

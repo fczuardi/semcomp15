@@ -1,6 +1,7 @@
 import game from './src/game';
-import server from './src/server';
+import webServer from './src/server';
+import wsServer from './src/ws-server';
 import bot from './src/bot';
 
 bot.start(game);
-server.start(game);
+webServer.start(game);
