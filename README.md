@@ -1,3 +1,10 @@
+AVISO
+===========
+
+Estou refatorando este codigo em outro repositorio: https://github.com/fczuardi/textndrive que deve virar o oficial.
+
+
+
 Motorista Particular
 ===================
 
